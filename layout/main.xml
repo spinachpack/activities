@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:gravity="center"
+    android:background="#57B4BA">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="40dp"
+            >
+            <TextView
+                android:id="@+id/tvWelcome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:layout_marginTop="8dp"
+                android:text="Welcome back!" />
+
+            <TextView
+                android:id="@+id/tvFavoriteDog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:layout_marginTop="4dp"
+                android:visibility="gone"
+                tools:text="Your favorite breed: Golden Retriever"
+                tools:visibility="visible" />
+
+            <ImageView
+                android:layout_width="290dp"
+                android:layout_height="200dp"
+                android:src="@drawable/dog"
+                android:layout_margin="20dp"
+                android:background="@drawable/roundedimage"/>
+
+            <TextView
+                android:id="@+id/textTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enter Dog Info"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_gravity="center"/>
+
+            <EditText
+                android:id="@+id/etDogName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Dog Name"
+                android:inputType="text"
+                android:layout_marginTop="16dp" />
+
+            <EditText
+                android:id="@+id/etDogAge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Dog Age"
+                android:inputType="number"
+                android:layout_marginTop="16dp" />
+
+            <EditText
+                android:id="@+id/etDogBreed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Dog Breed"
+                android:inputType="text"
+                android:layout_marginTop="16dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnLogout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Log Out"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/customborder"
+                    android:backgroundTint="#98D2C0"
+                    android:textColor="@color/white"/>
+
+                <Button
+                    android:id="@+id/btnNext"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Next"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/customborder"
+                    android:backgroundTint="#015551"
+                    android:textColor="@color/white"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
